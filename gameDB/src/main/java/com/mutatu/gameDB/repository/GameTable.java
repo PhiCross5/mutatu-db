@@ -14,5 +14,6 @@ public interface GameTable extends PagingAndSortingRepository<Game,Long>{
 
 	public Optional<Game> findById(@Param("id")Long id);
 	public List<Game> findByTitle(@Param("title") String title);
-	
+	public Game save(Game game);
+	public void delete(Game game);
 }
